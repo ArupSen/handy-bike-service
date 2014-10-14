@@ -1,6 +1,14 @@
 /*
-Stylesheet for --Add website name here--
-Date: April 2009
+_____                         ___
+(  _  )                       (  _`\
+| (_) | _ __  _   _  _ _      | | ) |   __    ___ (_)   __    ___    ___
+|  _  |( '__)( ) ( )( '_`\    | | | ) /'__`\/',__)| | /'_ `\/' _ `\/',__)
+| | | || |   | (_) || (_) )   | |_) |(  ___/\__, \| |( (_) || ( ) |\__, \
+(_) (_)(_)   `\___/'| ,__/'   (____/'`\____)(____/(_)`\__  |(_) (_)(____/
+                    | |                              ( )_) |
+                    (_)                               \___/'
+Stylesheet for Handy Bike Service
+Date: October 2014
 Author: Arup Sen
 http://arupdesigns.co.uk
 arup@arupdesigns.co.uk
@@ -39,9 +47,12 @@ content: "";}
 
 // COLOUR PALETTE
 
-$body_font = #595959;
-$main_blue = #0F77BB;
+$body_font : #595959;
+$main_blue : #0F77BB;
 
+// FONTS
+$averia :'Averia Sans Libre', cursive;
+$cabin :'Cabin', sans-serif;
 
 /* BG IMAGE PATH url('../images/my_image.gif') */
 /*the main global rules*/
@@ -50,8 +61,6 @@ div#wrap{}
 
 
 /*grouped selectors - good for position:absolute and relative*/
-font-family: 'Averia Sans Libre', cursive;
-font-family: 'Cabin', sans-serif;
 
 /*main heading and sub heading*/
 
