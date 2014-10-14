@@ -1,5 +1,5 @@
 /*
-_____                         ___
+ _____                         ___
 (  _  )                       (  _`\
 | (_) | _ __  _   _  _ _      | | ) |   __    ___ (_)   __    ___    ___
 |  _  |( '__)( ) ( )( '_`\    | | | ) /'__`\/',__)| | /'_ `\/' _ `\/',__)
@@ -17,6 +17,7 @@ No license. Use what you like.
 Happy to receive feedback :)
 */
 
+// set to zero
 html, body, div, span,
 applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -46,9 +47,9 @@ blockquote:before, blockquote:after {
 content: "";}
 
 // COLOUR PALETTE
-
 $body_font : #595959;
 $main_blue : #0F77BB;
+$white : #FFFFFF;
 
 // FONTS
 $averia :'Averia Sans Libre', cursive;
@@ -56,27 +57,84 @@ $cabin :'Cabin', sans-serif;
 
 /* BG IMAGE PATH url('../images/my_image.gif') */
 /*the main global rules*/
-body{font-family:Arial, sans-serif;font-size:100.01%;position:relative;margin:0 auto;background-color:#FFFFFF;}
-div#wrap{}
+body{font-family:$cabin;font-size:100.01%;position:relative;margin:0 auto;background-color:$main_blue;}
+div#wrap{
+  background: $white;
+  margin: 0 auto;
+  width: 900px;
+  padding-left: 40px;
+  padding-top: 90px;
+  position: relative;
+}
 
 
 /*grouped selectors - good for position:absolute and relative*/
-
+h2, h3, aside {
+  font-family: $averia;
+  color: $main_blue;
+}
+header, img.edge, #contents aside {
+  position: absolute;
+}
 /*main heading and sub heading*/
-
-
-
+header {
+right: -130px;
+top: 280px;
+z-index: 2;
+}
+h1 {
+  background: url('logo.png') no-repeat;
+  width: 200px;
+  height: 150px;
+  font-size: 0px;
+}
 /*content area*/
 div#contents{}
-#contents p{}
+#contents p{
+  font-size: 14px;
+  color: $body_font;
+  margin-bottom: 1.4em;
+}
 
 #contents ul, #contents h2{}
 
-#contents h2{}
+#contents h2{
+  font-size: 33px;
+}
+#contents h3 {
+  font-size: 14px;
+}
+#contents aside {
+  font-size: 26px;
+  text-align: right;
+  width: 180px;
+  top: 400px;
+  left: 580px;
+  z-index: 2;
+}
+address {
+  font-family: $averia;
+  color: $white;
+  right: 40px;
+  top: 500px;
+  .name {
+    font-size: 23px;
+  }
+  .email {
+    font-size: 15px;
+  }
+  .phone {
+    font-size: 34px;
+  }
+}
+img.edge {
+  top: -60px;
+  right: 0px;
+  width: 350px;
+}
 #contents li{}
 #contents a{}
 #contents a:hover{}
-
 
 /*main navbar*/
 ul#navbar{}
@@ -84,7 +142,6 @@ ul#navbar li{}
 
 div#clear {clear:left;}
 ul#navbar li a{text-decoration:none;}
-
 
 /*footer image link - arup designs*/
 #footer{}
@@ -97,8 +154,6 @@ ul#navbar li a{text-decoration:none;}
 /*navbar*/
   ul#navbar{}
   ul#navbar li {}
-
-
 
 /*content area*/
   div#contents{}
