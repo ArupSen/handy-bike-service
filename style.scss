@@ -65,7 +65,7 @@ div#wrap{
   width: 840px;
   padding-left: 40px;
   padding-top: 90px;
-  padding-bottom: 28px;
+  padding-bottom: 22px;
   position: relative;
 }
 
@@ -149,7 +149,9 @@ div#clear {clear:left;}
 /*all the Safari stuff together*/
 @media screen and (-webkit-min-device-pixel-ratio:0){
 /*global rules*/
-  div#wrap{}/*safari rule*/
+  div#wrap{
+  padding-bottom: 28px;
+  }/*safari rule*/
 
 /*navbar*/
   ul#navbar{}
