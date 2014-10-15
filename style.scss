@@ -12,6 +12,7 @@ Date: October 2014
 Author: Arup Sen
 http://arupdesigns.co.uk
 arup@arupdesigns.co.uk
+Layout design: Diego Lombardi
 css to zero courtesy of Eric Meyer with adjustments
 No license. Use what you like.
 Happy to receive feedback :)
@@ -61,12 +62,12 @@ body{font-family:$cabin;font-size:100.01%;position:relative;margin:0 auto;backgr
 div#wrap{
   background: $white;
   margin: 0 auto;
-  width: 900px;
+  width: 840px;
   padding-left: 40px;
   padding-top: 90px;
+  padding-bottom: 28px;
   position: relative;
 }
-
 
 /*grouped selectors - good for position:absolute and relative*/
 h2, h3, aside {
@@ -78,9 +79,9 @@ header, img.edge, #contents aside {
 }
 /*main heading and sub heading*/
 header {
-right: -130px;
-top: 280px;
-z-index: 2;
+  right: -120px;
+  top: 355px;
+  z-index: 2;
 }
 h1 {
   background: url('logo.png') no-repeat;
@@ -89,14 +90,14 @@ h1 {
   font-size: 0px;
 }
 /*content area*/
-div#contents{}
 #contents p{
   font-size: 14px;
   color: $body_font;
-  margin-bottom: 1.4em;
+  margin-bottom: 2em;
 }
-
-#contents ul, #contents h2{}
+#contents p:first-of-type {
+  margin-bottom: 0.5em;
+}
 
 #contents h2{
   font-size: 33px;
@@ -109,39 +110,38 @@ div#contents{}
   text-align: right;
   width: 180px;
   top: 400px;
-  left: 580px;
+  left: 550px;
   z-index: 2;
 }
 address {
   font-family: $averia;
   color: $white;
-  right: 40px;
-  top: 500px;
+  margin-top: 40px;
+  position: relative;
+  left: -20px;
   .name {
     font-size: 23px;
   }
   .email {
     font-size: 15px;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
   }
   .phone {
     font-size: 34px;
   }
 }
 img.edge {
-  top: -60px;
+  top: -30px;
   right: 0px;
   width: 350px;
 }
-#contents li{}
-#contents a{}
 #contents a:hover{}
 
-/*main navbar*/
-ul#navbar{}
-ul#navbar li{}
 
 div#clear {clear:left;}
-ul#navbar li a{text-decoration:none;}
 
 /*footer image link - arup designs*/
 #footer{}
